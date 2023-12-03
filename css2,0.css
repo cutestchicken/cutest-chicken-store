@@ -1,0 +1,799 @@
+/* tipografias
+font-family: 'Comfortaa', sans-serif;
+font-family: 'Mulish', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+    emojis
+font-family: 'Noto Color Emoji', sans-serif;
+    icons
+<span class="material-symbols-outlined">
+*nombre icon*
+</span>
+color
+    background-color: rgba(33, 29, 77, 0.397);
+
+
+    .contMenu nav ul li a:hover{
+    border-left: 5px solid #b4a58ebf;
+    background-color: rgba(239, 231, 222, 0.363);
+}
+*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    border: 0px;
+}
+button{
+    background-color: white;
+    border: none;
+}
+.busqicon{
+    height: 30px;
+    position: relative;
+    top: 7px;
+    cursor: pointer;
+}
+h1, h2, h3, h4{
+    font-family: 'Playfair Display', serif; 
+}
+header{
+    text-align: center;
+}
+nav{
+    margin: 10px;
+    height: 50px;
+    width: 99%;
+}
+.menu{
+    justify-content: center;
+    width: 99vw;
+    display: flex;
+    padding-bottom: 20px;
+}
+.menu11{
+    align-items: center;
+    width: 60%;
+    display: inline-flex;
+}
+.menu21{
+    align-items: center;
+    width: 40%;
+    display: inline-flex;
+    float: right;
+}
+.menu1{
+    width: auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu1 > li > a{
+    justify-content: space-around;
+    display: block;
+    padding: 0px 60px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.menu1 > li:hover{
+    background-color: rgba(186, 172, 153, 0.678);
+    padding: 15px 15px;
+    position: relative;
+    bottom: 1em;
+}
+.menu2{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu2 > li{
+    justify-content: space-around;
+    display: block;
+    padding: 0px 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.buscador1{
+    visibility: hidden;
+    position: relative;
+}
+.buscador11{
+    display: flex;
+    justify-content: space-around;
+}
+.buscador11 > input{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+}
+.buscador11 > li{
+    margin: 5px;
+}
+#buscador{
+    display: none;
+}
+#buscador:checked ~ .buscador1{
+    visibility: visible;
+}
+.menuicon{
+    height: 35px;
+    cursor: pointer;
+    position: relative;
+    top: 6px;
+}
+#btnmenu{
+    display: none;
+}
+.menuPDCTS{
+    opacity: 0;
+    visibility: hidden;
+    width: 350px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.799);
+}
+#btnmenu:checked ~ .menuPDCTS{
+    opacity: 1;
+    visibility: visible;
+    width: 350px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.799);
+}
+.listA{
+    list-style: none;
+    display: block;
+    float: right;
+    justify-content: right;
+}
+.listA > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.listA > li:hover{
+    background-color: rgba(234, 226, 217, 0.594);
+}
+.listB{
+    position: absolute;
+    display: none;
+    list-style: none;
+    left: 0;
+    width: 200px;
+    background-color: rgba(186, 172, 153, 0.678);
+}
+.listA li:hover .listB{
+    display: contents;
+}
+.listB li:hover{
+    background-color: rgba(189, 171, 147, 0.765);
+}
+.listB li a{
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+#carritoc{
+    display: none;
+}
+.carritoCPS{
+    opacity: 0;
+    visibility: hidden;
+    width: 350px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.922);
+}
+#carritoc:checked ~ .carritoCPS{
+    opacity: 1;
+    visibility: visible;
+}
+.carritodesp{
+    margin: 5px;
+    padding: 10px;
+    text-align: left;
+}
+.carrimg{
+    height: 80px;
+    padding-right: 8px;
+    display: flex;
+    float: left;
+}
+.carrclose{
+    height: 20px;
+    display: flex;
+    float: right;
+    cursor: pointer;
+}
+section{
+    background-image: url('img/tiny\ dinos\ transp.png');
+    background-size: cover;
+    padding: 10px;
+    height: auto;
+}
+.hh{
+    font-size: 2em;
+}
+.column a img{
+    width: 65%;
+    display: flex;
+    margin: 15px auto;
+    border-style: double;
+    border-width: 10px;
+    border-color: rgba(189, 171, 147, 0.765);
+}
+.intro{
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.639);
+    margin: 70px auto;
+    padding: 3px 25px;
+    width: 70%;
+    border-radius: 0.5em;
+}
+.pdcts{
+    padding: 10px 5px;
+    width: 65vw;
+}
+.pdcts tr{
+    width: 65%;
+}
+.pdcts tr td{
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+}
+.pdcts tr td label img{
+    cursor: pointer;
+    height: 150px;
+    margin: auto;
+    display: flex;
+}
+.modal{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    position: fixed;
+    top: 300px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.inputpdcts{
+    display: none;
+}
+#gallina:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+}
+#capybara:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+}
+#elefante:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+}
+#hamsters:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+}
+#conejo:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+}
+#vacas:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+}
+#marinos:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+}
+#bosque:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+}
+#granja:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+}
+#anibbs:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+}
+#dinosaurios:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+}
+#tortuguita:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+}
+#tinydinos:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+}
+.pdctsdesc{
+    width: 66%;
+    height: 500px;
+    overflow-y: auto;
+    margin: 70px auto;
+    padding: 18px 25px;
+    display: block;
+    background-color: #fff ;
+    box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.64);
+    transition: all 500ms ease;
+    border-radius: 0.5em;
+    position: absolute;
+}
+.info{
+    width: 70%;
+    margin: auto;
+    padding: 0px 15px;
+}
+.btnsmll{
+    cursor: pointer;
+    border: none;
+    background-color: rgba(186, 172, 153, 0.678);
+    height: 1.8em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+    margin: 0px 15px;
+    color: #000000;
+}
+.btnlbl{
+    padding: 6.8px;
+}
+.opts{
+    height: 2em;
+    width: 18em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+}
+#cerrar{
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+}
+.slide {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+}
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc( 300px + 3em);
+}
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+    text-align: center;
+}
+.slide-item img {
+    height: 400px;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+.slide-control.prev {
+    left: 2%;
+}
+.slide-control.next {
+    right: 2%;
+}
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+#slide-1-1:checked ~ .control-1-1,
+#slide-2-1:checked ~ .control-2-1,
+#slide-3-1:checked ~ .control-3-1,
+#slide-4-1:checked ~ .control-4-1 {
+    display: block;
+}
+#slide-1-2:checked ~ .control-1-2,
+#slide-2-2:checked ~ .control-2-2,
+#slide-3-2:checked ~ .control-3-2,
+#slide-4-2:checked ~ .control-4-2 {
+    display: block;
+}
+#slide-1-3:checked ~ .control-1-3,
+#slide-2-3:checked ~ .control-2-3,
+#slide-3-3:checked ~ .control-3-3,
+#slide-4-3:checked ~ .control-4-3,
+#slide-5-3:checked ~ .control-5-3 {
+    display: block;
+}
+#slide-1-4:checked ~ .control-1-4,
+#slide-2-4:checked ~ .control-2-4,
+#slide-3-4:checked ~ .control-3-4,
+#slide-4-4:checked ~ .control-4-4 {
+    display: block;
+}
+#slide-1-5:checked ~ .control-1-5,
+#slide-2-5:checked ~ .control-2-5,
+#slide-3-5:checked ~ .control-3-5,
+#slide-4-5:checked ~ .control-4-5,
+#slide-5-5:checked ~ .control-5-5,
+#slide-6-5:checked ~ .control-6-5,
+#slide-7-5:checked ~ .control-7-5,
+#slide-8-5:checked ~ .control-8-5,
+#slide-9-5:checked ~ .control-9-5 {
+    display: block;
+}
+#slide-1-6:checked ~ .control-1-6,
+#slide-2-6:checked ~ .control-2-6,
+#slide-3-6:checked ~ .control-3-6 {
+    display: block;
+}
+#slide-1-7:checked ~ .control-1-7,
+#slide-2-7:checked ~ .control-2-7,
+#slide-3-7:checked ~ .control-3-7,
+#slide-4-7:checked ~ .control-4-7,
+#slide-5-7:checked ~ .control-5-7 {
+    display: block;
+}
+#slide-1-8:checked ~ .control-1-8,
+#slide-2-8:checked ~ .control-2-8 {
+    display: block;
+}
+#slide-1-9:checked ~ .control-1-9,
+#slide-2-9:checked ~ .control-2-9,
+#slide-3-9:checked ~ .control-3-9,
+#slide-4-9:checked ~ .control-4-9,
+#slide-5-9:checked ~ .control-5-9,
+#slide-6-9:checked ~ .control-6-9 {
+    display: block;
+}
+#slide-1-10:checked ~ .control-1-10,
+#slide-2-10:checked ~ .control-2-10,
+#slide-3-10:checked ~ .control-3-10,
+#slide-4-10:checked ~ .control-4-10,
+#slide-5-10:checked ~ .control-5-10,
+#slide-6-10:checked ~ .control-6-10,
+#slide-7-10:checked ~ .control-7-10,
+#slide-8-10:checked ~ .control-8-10 {
+    display: block;
+}
+#slide-1-11:checked ~ .control-1-11,
+#slide-2-11:checked ~ .control-2-11,
+#slide-3-11:checked ~ .control-3-11,
+#slide-4-11:checked ~ .control-4-11,
+#slide-5-11:checked ~ .control-5-11,
+#slide-6-11:checked ~ .control-6-11,
+#slide-7-11:checked ~ .control-7-11,
+#slide-8-11:checked ~ .control-8-11,
+#slide-9-11:checked ~ .control-9-11 {
+    display: block;
+}
+#slide-1-12:checked ~ .control-1-12,
+#slide-2-12:checked ~ .control-2-12,
+#slide-3-12:checked ~ .control-3-12,
+#slide-4-12:checked ~ .control-4-12 {
+    display: block;
+}
+#slide-1-13:checked ~ .control-1-13,
+#slide-2-13:checked ~ .control-2-13,
+#slide-3-13:checked ~ .control-3-13,
+#slide-4-13:checked ~ .control-4-13,
+#slide-5-13:checked ~ .control-5-13 {
+    display: block;
+}
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+#slide-1-1:checked ~ .control-1-1 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2-1:checked ~ .control-2-1 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3-1:checked ~ .control-3-1 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo,
+#slide-4-1:checked ~ .control-4-1 ~ .slide-indicador 
+      li:nth-child(4) .slide-circulo {
+    color: rgb(197, 150, 88);
+}
+#slide-1-2:checked ~ .control-1-2 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2-2:checked ~ .control-2-2 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3-2:checked ~ .control-3-2 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo,
+#slide-4-2:checked ~ .control-4-2 ~ .slide-indicador 
+      li:nth-child(4) .slide-circulo {
+    color: rgb(197, 150, 88);
+}
+#slide-1-3:checked ~ .control-1-3 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2-3:checked ~ .control-2-3 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3-3:checked ~ .control-3-3 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo,
+#slide-4-3:checked ~ .control-4-3 ~ .slide-indicador 
+      li:nth-child(4) .slide-circulo,
+#slide-5-3:checked ~ .control-5-3 ~ .slide-indicador 
+      li:nth-child(5) .slide-circulo {
+    color: rgb(197, 150, 88);
+}
+#slide-1-4:checked ~ .control-1-4 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2-4:checked ~ .control-2-4 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3-4:checked ~ .control-3-4 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo,
+#slide-4-4:checked ~ .control-4-4 ~ .slide-indicador 
+      li:nth-child(4) .slide-circulo {
+    color: rgb(197, 150, 88);
+}
+#slide-1-5:checked ~ .control-1-5 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2-5:checked ~ .control-2-5 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3-5:checked ~ .control-3-5 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo,
+#slide-4-5:checked ~ .control-4-5 ~ .slide-indicador 
+      li:nth-child(4) .slide-circulo,
+#slide-5-5:checked ~ .control-5-5 ~ .slide-indicador 
+      li:nth-child(5) .slide-circulo,
+#slide-6-5:checked ~ .control-6-5 ~ .slide-indicador 
+      li:nth-child(6) .slide-circulo,
+#slide-7-5:checked ~ .control-7-5 ~ .slide-indicador 
+      li:nth-child(7) .slide-circulo,
+#slide-8-5:checked ~ .control-8-5 ~ .slide-indicador 
+      li:nth-child(8) .slide-circulo,
+#slide-9-5:checked ~ .control-9-5 ~ .slide-indicador 
+      li:nth-child(9) .slide-circulo {
+    color: rgb(197, 150, 88);
+}
+#slide-1-6:checked ~ .control-1-6 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2-6:checked ~ .control-2-6 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3-6:checked ~ .control-3-6 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo {
+    color: rgb(197, 150, 88);
+}
+#slide-1-7:checked ~ .control-1-7 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2-7:checked ~ .control-2-7 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3-7:checked ~ .control-3-7 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo,
+#slide-4-7:checked ~ .control-4-7 ~ .slide-indicador 
+      li:nth-child(4) .slide-circulo,
+#slide-5-7:checked ~ .control-5-7 ~ .slide-indicador 
+      li:nth-child(5) .slide-circulo {
+    color: rgb(197, 150, 88);
+}
+#slide-1-8:checked ~ .control-1-8 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2-8:checked ~ .control-2-8 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo {
+    color: rgb(197, 150, 88);
+}
+#slide-1-9:checked ~ .control-1-9 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2-9:checked ~ .control-2-9 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3-9:checked ~ .control-3-9 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo,
+#slide-4-9:checked ~ .control-4-9 ~ .slide-indicador 
+      li:nth-child(4) .slide-circulo,
+#slide-5-9:checked ~ .control-5-9 ~ .slide-indicador 
+      li:nth-child(5) .slide-circulo,
+#slide-5-9:checked ~ .control-6-9 ~ .slide-indicador 
+      li:nth-child(6) .slide-circulo {
+    color: rgb(197, 150, 88);
+}
+#slide-1-10:checked ~ .control-1-10 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2-10:checked ~ .control-2-10 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3-10:checked ~ .control-3-10 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo,
+#slide-4-10:checked ~ .control-4-10 ~ .slide-indicador 
+      li:nth-child(4) .slide-circulo,
+#slide-5-10:checked ~ .control-5-10 ~ .slide-indicador 
+      li:nth-child(5) .slide-circulo,
+#slide-6-10:checked ~ .control-6-10 ~ .slide-indicador 
+      li:nth-child(6) .slide-circulo,
+#slide-7-10:checked ~ .control-7-10 ~ .slide-indicador 
+      li:nth-child(7) .slide-circulo,
+#slide-8-10:checked ~ .control-8-10 ~ .slide-indicador 
+      li:nth-child(8) .slide-circulo {
+    color: rgb(197, 150, 88);
+}
+#slide-1-11:checked ~ .control-1-11 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2-11:checked ~ .control-2-11 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3-11:checked ~ .control-3-11 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo,
+#slide-4-11:checked ~ .control-4-11 ~ .slide-indicador 
+      li:nth-child(4) .slide-circulo,
+#slide-5-11:checked ~ .control-5-11 ~ .slide-indicador 
+      li:nth-child(5) .slide-circulo,
+#slide-6-11:checked ~ .control-6-11 ~ .slide-indicador 
+      li:nth-child(6) .slide-circulo,
+#slide-7-11:checked ~ .control-7-11 ~ .slide-indicador 
+      li:nth-child(7) .slide-circulo,
+#slide-8-11:checked ~ .control-8-11 ~ .slide-indicador 
+      li:nth-child(8) .slide-circulo,
+#slide-9-11:checked ~ .control-9-11 ~ .slide-indicador 
+      li:nth-child(9) .slide-circulo {
+    color: rgb(197, 150, 88);
+}
+#slide-1-12:checked ~ .control-1-12 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2-12:checked ~ .control-2-12 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3-12:checked ~ .control-3-12 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo,
+#slide-4-12:checked ~ .control-4-12 ~ .slide-indicador 
+      li:nth-child(4) .slide-circulo {
+    color: rgb(197, 150, 88);
+}
+#slide-1-13:checked ~ .control-1-13 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2-13:checked ~ .control-2-13 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3-13:checked ~ .control-3-13 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo,
+#slide-4-13:checked ~ .control-4-13 ~ .slide-indicador 
+      li:nth-child(4) .slide-circulo,
+#slide-5-13:checked ~ .control-5-13 ~ .slide-indicador 
+      li:nth-child(5) .slide-circulo {
+    color: rgb(197, 150, 88);
+}
+/*
+#titulo {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+         -1px 0px 2px rgba(255, 255, 255, 0);
+}*/
+.slide-text1{
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.4em;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}   
+.slide-text2{
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.4em;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}     
+footer{
+    text-align: center;
+    border: 5px;
+    padding: 10px;
+}
+.btn{
+    border: none;
+    background-color: rgba(186, 172, 153, 0.678);
+    height: 1.6em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+}
+.txtbx{
+    height: 1.3em;
+    width: 20em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+}
+.registro{
+    text-align: left;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+}
+.form{
+    width: 90%;
+    align-items: center;
+    margin: auto;
+}
+.anuncioo{
+    visibility: hidden;
+    opacity: 0;
+}
+#anuncio:checked ~ .anuncioo{
+    visibility: visible;
+    opacity: 1;
+}
+table{
+    text-align: left;
+    width: 97%;
+}
+.nosotros{
+    width: 25%;
+    padding-left: 20px;
+}
+#contcfoot{
+    padding-left: 30px;
+}
+li > a > img{
+    height: 45px;
+}
+#datosfoot{
+    width: 30%;
+    padding-left: 20px;
+}
+.foot{
+    list-style: none;
+}
+.foot > li > a{
+    text-decoration: underline;
+    color: black;
+}
